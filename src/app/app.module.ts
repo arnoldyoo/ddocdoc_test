@@ -2,13 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { StoreModule } from '@ngrx/store';
+import { curationReducer } from './reducers/curation.reducer';
+import { CurationListComponent } from './components/curation-list/curation-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CurationListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    StoreModule.forRoot({ curation: curationReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]
