@@ -1,11 +1,11 @@
 import { Action } from '@ngrx/store';
 import { ICuration } from '../types/curation.types';
 
-export const CURATION_LOADING = '[Curation Component] Curation_Loading'
+export const CURATION_LOAD = '[Curation Component] Curation_Load'
 export const CURATION_COMPLETE = '[Curation Component] Curation_complete'
 
-export class CurationLoadingAction implements Action {
-  readonly type = CURATION_LOADING
+export class CurationLoadAction implements Action {
+  readonly type = CURATION_LOAD
 }
 
 export class CurationCompleteAction implements Action {
@@ -14,7 +14,7 @@ export class CurationCompleteAction implements Action {
   constructor(public payload: Array<ICuration>) { }
 }
 
-export type Actions = CurationLoadingAction | CurationCompleteAction
+export type Actions = CurationLoadAction | CurationCompleteAction
 
 
 

@@ -23,3 +23,7 @@ interface ICurationGroup {
     title: string
     description: string
 }
+
+export interface ICurationResponse {
+    items: Array<ICuration>
+}

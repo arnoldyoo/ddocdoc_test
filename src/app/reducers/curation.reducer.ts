@@ -15,7 +15,7 @@ const initialState: IState = {
  
 export function curationReducer(state = initialState, action: Curation.Actions): IState {
   switch (action.type) {
-    case Curation.CURATION_LOADING:
+    case Curation.CURATION_LOAD:
         return Object.assign({}, state, {
             loading: true
         });
