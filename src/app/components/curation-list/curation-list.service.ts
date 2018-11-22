@@ -11,7 +11,7 @@ export class CurationListService {
   ) { }
 
   getCurationList(): Observable<any> {
-    return this.http.get('https://api.ddocdoc.com/v2/eventBanner?populate=true').pipe(
+    return this.http.get('assets/mock/curation.json').pipe(
       map((res: ICurationResponse) => res.items )
     )
   }

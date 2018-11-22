@@ -1,0 +1,46 @@
+:host {
+  .main-container {
+    max-width: 720px;
+    margin: 0 auto;
+    height: 100%;
+    ul .curation-item {
+      box-sizing: border-box;
+      list-style: none;
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      .curation-info {
+        padding: 18px 30px 16px;
+        border-bottom: 1px solid #ddd;
+        background: #fff;
+        font-size: 12px;
+
+        h5 {
+          padding: 0;
+          margin: 0;
+          margin-bottom: 7px;
+          color: #212529;
+          font-weight: 700;
+          font-size: 14px;
+        }
+
+        p {
+          margin: 0;
+          color: #666;
+          font-size: 12px;
+          strong {
+            font-style: normal;
+            font-weight: 400;
+            color: #f56a6b;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div class="main-container">
+  <ul>
+    <li class="curation-item" *ngFor="let curation of curationList">
+      <a href="https://event.ddocdoc.com/curation/{{curation.groupId._id}}" >
+        <img [src]="curation.mainImage.url" />
+        <div class="curation-info" >
+          <h5> {{curation.title}} </h5>
+          <p>
+            <strong> 기획전 </strong>
+            <b> | </b>
+            {{ curation.groupId.description }}
+          </p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
